@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header start */
+.header{
+    width: 100%;
+    background-color: var(--purple300);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease 0s;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid;
+}
+
+/* Main Body Section 1 start*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding-top: 16%;
+}
+.hero_content h1{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+.hero_content h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Section 2 Start */
+.sec2{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--purple500);
+}
+
+.music_content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding-top: 50px;
+}
+.music_content .btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--red600);
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+/* Section 3 start */
+.sec3{
+    padding-top: 30%;
+}
+.read{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+.read h2{
+    font-size: 25px;
+}
+.read .btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--purple300);
+    color: white;
+}
+.pic{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.pic-content{
+    text-align: center;
+    color: white;
+    padding-top: 220px;
+}
+.pic-content p{
+    margin-top: 30px;
+}
+
+/* Section 4 staart */
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 0;
+}
+.card-content{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-content .btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--purple300);
+    color: white;
+}
+.sec5{
+    width: 100%;
+    background-color: var(--purple600);
+    padding: 50px 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items{
+    color: white;
+}
+.items hr{
+    border: 1.9px solid white;
+    margin: 10px 0 ;
+}
+.items h4{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: var(--purple300);
+    padding: 10px 0;
+}
